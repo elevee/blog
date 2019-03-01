@@ -20,3 +20,5 @@ Needed a simple markdown blog platform that could also serve as an online presen
 - CSS Grid for view layout
 
 ###  Takeaways / Improvements
+
+- Netlify - I've been hearing the hype for a while now, and the deploy process with a static site generator structure was probably faster than that of Heroku! 

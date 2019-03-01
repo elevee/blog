@@ -43,7 +43,7 @@ exports.createPages = ({ graphql, actions }) => {
         const posts = result.data.allMarkdownRemark.edges;
         console.log(`posts are ${JSON.stringify(posts)}`);
         _.each(posts, (post, index) => {
-          const template = path.resolve(`./src/templates/${post.node.frontmatter.type === "project" ? "project.js" : "blog-post.js"}`);
+          const template = path.resolve(`src/templates/${post.node.frontmatter.type === "project" ? "project.js" : "blog-post.js"}`);
           const previous = index === posts.length - 1 ? null : posts[index + 1].node;
           const next = index === 0 ? null : posts[index - 1].node;
           console.log(`creating page at ${post.node.fields.slug}`);

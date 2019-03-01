@@ -6,9 +6,9 @@ import { rhythm, scale } from '../utils/typography'
 
 import Nav from './Nav.js'
 import logo from '../../static/logos/site.png'
-import fav_apple_touch from '../../public/apple-touch-icon.png'
-import fav_lg from '../../public/favicon-32x32.png'
-import fav from '../../public/favicon-16x16.png'
+import fav_apple_touch from '../../static/icons/apple-touch-icon.png'
+import fav_lg from '../../static/icons/favicon-32x32.png'
+import fav from '../../static/icons/favicon-16x16.png'
 
 class Layout extends React.Component {
   render() {

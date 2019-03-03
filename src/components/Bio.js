@@ -28,7 +28,7 @@ class Bio extends React.Component {
           }}
         />
         <p>
-          Written by <strong><Link to={'/about'} style={{boxShadow:'none', color: 'orange'}}>Eric Levine</Link></strong> who tries very hard not to be a try-hard in Los Angeles building try-hard one-liners like this.
+          Written by <strong><Link to={'/about'} style={{boxShadow:'none', color: 'orange !important'}}>Eric Levine</Link></strong> who tries very hard not to be a try-hard in Los Angeles building try-hard one-liners like this.
         </p>
       </div>
     )

@@ -17,10 +17,12 @@ I cook a lot. More often than not, it's a recipe I've never made before. Hands a
 
 ### Tech involved
 
-- Amazon Alexa SDK - No avoiding it when making a Alexa skill!
-- Amazon Lambda - The function that executes everytime you invoke the Chef skill
-- Amazon DynamoDB - NoSQL database containing users' recipes
+- __Amazon Alexa SDK__ - No avoiding it when making a Alexa skill!
+- __Amazon Lambda__ - The function that executes everytime you invoke the Chef skill
+- __Amazon DynamoDB__ - NoSQL database containing users' recipes
 
 ###  Takeaways / Improvements
 
-- Due to the way Alexa handles sessions, I had to store the current recipe as a flag in the database
+- Due to the way Alexa handles sessions, I had to store the current recipe as a flag in the database to retain state across requests.
+
+- If this were to be rolled out to the Alexa Skills store, there would be a need to namespace recipe collections in the database so that multiple users can use the skill. Right now it works well with one Amazon user.

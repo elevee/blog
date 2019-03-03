@@ -7,7 +7,7 @@ logo: "gifbeukeboom"
 github: "https://github.com/elevee/gif_beukeboom"
 ---
 
-Gif Beukeboom is a service that converts NHL goals into GIFs and aggregates them onto a website for at-a-glance viewing. A companion Slack integration delivers each GIF right into a slack channel shortly after the video goes live on NHL.com's API.
+Gif Beukeboom is a service that converts NHL goals into GIFs and aggregates them onto a website for at-a-glance viewing. A companion Slack integration delivers each GIF right into a slack channel shortly after the video goes live on the [NHL](http://www.nhl.com)'s API.
 
 ### Purpose
 
@@ -19,13 +19,13 @@ A reddit-like voting system was also implemented, to enable sorting/filtering fe
 
 ### Tech involved
 
-- PHP/Linux/Bash - A PHP script, set to run in crontab on a regular interval, checks the API for new goals and converts them to GIF format.
-- Amazon S3 - bucket for GIF asset storage
-- Express.js - The resulting website (currently offline).
-- Oauth for Facebook login
-- Foundation for view layout
-- EJS for view templating
-- Moment.js for time formatting and processing.
+- __PHP/Linux/Bash__ - A PHP script, set to run in crontab on a regular interval, checks the API for new goals and converts them to GIF format.
+- __Amazon S3__ - bucket for GIF asset storage
+- __Express.js__ - The resulting website (currently offline).
+- __Oauth__ for Facebook login
+- __Foundation__ for view layout
+- __EJS__ for view templating
+- __Moment.js__ for time formatting and processing.
 
 ###  Takeaways / Improvements
 
